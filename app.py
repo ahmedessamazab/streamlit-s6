@@ -1,12 +1,11 @@
-from calendar import c
 from os import name
 
-import streamlit as st
 import pandas as pd
+import streamlit as st
 
 st.set_page_config(layout="centered")
 
-st.title("Ahmed Azab's portfolio")
+st.title("cat's portfolio")
 
 st.image(
     "./images/cat.webp",
@@ -22,9 +21,6 @@ if st.button("Submit"):
     st.write(f"Hello, {name}! You are {age} years old.")
 
 
-df = pd.DataFrame({
-    'Column 1': [1, 2, 3, 4, 5],
-    'Column 2': ['A', 'B', 'C', 'D', 'E']
-})
+df = pd.DataFrame({"Column 1": [1, 2, 3, 4, 5], "Column 2": ["A", "B", "C", "D", "E"]})
 
 st.dataframe(df)
